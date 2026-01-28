@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>KruigerLabs AI</title><link rel="stylesheet" href="./styles.css"/></head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div>
+    <h1>KruigerLabs AI</h1>
+    <p class="muted">Discord login • Plans by role • Owner = no limits + admin</p>
+  </div>
+  <div class="controls">
+    <button id="login" class="btn">Login with Discord</button>
+    <button id="logout" class="btn ghost hidden">Logout</button>
+  </div>
+</header>
+
+<section class="card">
+  <div class="row">
+    <div><div class="label">Account</div><div id="account" class="value">Not logged in</div></div>
+    <div><div class="label">Plan</div><div id="plan" class="value">guest</div></div>
+    <div><div class="label">Features</div><div id="features" class="value">chat: off</div></div>
+  </div>
+  <p class="hint">Plans are mapped to Discord roles. Bot must be in the server + env vars set.</p>
+</section>
+
+<main id="chat" class="chat"></main>
+
+<form id="form" class="bar">
+  <select id="model">
+    <option value="gpt-4.1-mini" selected>gpt-4.1-mini</option>
+    <option value="gpt-4.1">gpt-4.1 (Pro+)</option>
+  </select>
+  <input id="input" placeholder="Ask KruigerLabs AI..." autocomplete="off"/>
+  <button id="send" type="submit">Send</button>
+</form>
+</div>
+<script src="./app.js"></script>
+</body></html>

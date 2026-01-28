@@ -1,0 +1,10 @@
+{
+  "name": "kruigerlabs-ai-netlify",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "openai": "^4.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
